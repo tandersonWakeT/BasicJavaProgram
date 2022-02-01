@@ -18,7 +18,7 @@ public class BasicProgram {
         
         // Take input from user and use a while loop to execute 'j' number of times
         Scanner kb = new Scanner(System.in);
-        System.out.println("Enter an integer value");
+        System.out.println("\nEnter an integer value: ");
         int j = kb.nextInt();
         kb.close();
         
@@ -28,7 +28,34 @@ public class BasicProgram {
         	k++;
         }
 		
-        // Switch conditional statement
+        System.out.println("\nDay of the week example: ");
         
+        // Switch conditional statement
+        int day = 3;
+        switch(day) {
+        	case 1:
+        		System.out.println("Monday");
+        		break;
+        	case 2:
+        		System.out.println("Tuesday");
+        		break;
+        	case 3:
+        		System.out.println("Wednesday");
+        		break;
+        	case 4:
+        		System.out.println("Thursday");
+        		break;
+        	case 5:
+        		System.out.println("Friday");
+        		break;
+        	case 6:
+        		System.out.println("Saturday");
+        		break;
+        	case 7:
+        		System.out.println("Sunday");
+        		break;
+        	default:
+        		System.out.println("This is not a day of the week");
+        }
 	}
 }
